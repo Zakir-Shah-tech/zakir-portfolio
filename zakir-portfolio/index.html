@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zakir | Web developer, graphic designer, video editor</title>
+<meta name="description" content="Portfolio of Zakir, a self-taught web developer, graphic designer and video editor from Pakistan.">
+<link rel="preload" href="assets/fonts/unbounded-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="logo" href="#top" aria-label="Zakir, back to top">ZAKIR</a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav id="menu" class="menu" aria-label="Main">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#journey">Journey</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <h1 class="wordmark" aria-label="Zakir">
+    <span aria-hidden="true" style="--i:0">Z</span><span aria-hidden="true" style="--i:1">A</span><span aria-hidden="true" style="--i:2">K</span><span aria-hidden="true" style="--i:3">I</span><span aria-hidden="true" style="--i:4">R</span>
+  </h1>
+  <div class="hero-line"></div>
+  <div class="hero-row">
+    <p class="headline">Web developer, graphic designer, and video editor. Growing with every project.</p>
+    <div class="actions">
+      <a class="btn btn-blue" href="#work">See my work</a>
+      <a class="btn btn-line" href="mailto:zaakirshah57@gmail.com">Email me</a>
+    </div>
+  </div>
+</section>
+
+<section class="light" id="about">
+  <div class="wrap two">
+    <h2>About</h2>
+    <div class="prose">
+      <!-- EDIT: your intro text lives here -->
+      <p>I'm Zakir, a self-taught web developer and graphic designer from Pakistan, and an ICS student. I taught myself HTML, CSS, JavaScript, and Git, and I'm now learning React and Next.js.</p>
+      <p>Design is where I come from, so I care about how things look as much as how they work. I'm happiest when I can see my progress grow, so I keep building and adding what I learn here.</p>
+      <p>I'm open to freelance work with clients in Pakistan and abroad.</p>
+    </div>
+  </div>
+  <div class="wrap services">
+    <div><h3>Web development</h3><p>Responsive websites built with HTML, CSS and JavaScript.</p></div>
+    <div><h3>Graphic design</h3><p>Visuals and layouts designed in Photoshop, Figma and Canva.</p></div>
+    <div><h3>Video editing</h3><p>Motion and kinetic typography edited in CapCut.</p></div>
+  </div>
+</section>
+
+<section class="dark" id="work">
+  <div class="wrap">
+    <h2>Work</h2>
+    <div class="work-grid">
+
+      <!-- PROJECT CARD: copy this block to add a project -->
+      <article class="project big">
+        <img src="assets/zakirone.jpg" width="1200" height="679" loading="lazy" alt="Home page of ZakirOne, a store front-end with a search bar, category menu and product category cards">
+        <div class="project-body">
+          <h3>ZakirOne</h3>
+          <p>An Amazon-inspired store front-end and my first project, built with HTML and CSS. It is an educational practice project and is not affiliated with Amazon.</p>
+          <p class="tags">HTML, CSS</p>
+          <p class="links"><a href="https://zakir-shah-tech.github.io/ZakirOne/">Live site</a><a href="https://github.com/zakir-shah-tech/ZakirOne">Source code</a></p>
+        </div>
+      </article>
+
+      <article class="project">
+        <!-- REPLACE the poster with a real frame: <img src="assets/video.jpg" alt="..."> -->
+        <div class="poster" aria-hidden="true">Consumer<br>or creator?</div>
+        <div class="project-body">
+          <h3>Consumer vs creator</h3>
+          <p>A motivational kinetic typography video, edited in CapCut.</p>
+          <p class="links"><a href="https://www.tiktok.com/@zakirshah07/video/7675371631296154900">Watch on TikTok</a></p>
+        </div>
+      </article>
+
+      <article class="project empty">
+        <div class="project-body"><h3>Next project</h3><p>Currently learning React and Next.js. The next build goes here.</p></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="light" id="journey">
+  <div class="wrap">
+    <h2>Journey</h2>
+    <div class="journey">
+      <div>
+        <h3>Learned</h3>
+        <ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git and GitHub</li><li>Photoshop, Figma, Canva</li><li>CapCut</li></ul>
+      </div>
+      <div>
+        <h3>Learning now</h3>
+        <ul><li>React</li><li>Next.js</li><li>Harvard CS50x</li><li>AI tools</li></ul>
+      </div>
+      <div>
+        <h3>Certificates</h3>
+        <ul><li>HP LIFE: Ai for Business Professinals</li><li>Cisco Networking Academy: Web Development</li></ul>
+      </div>
+    </div>
+    <p class="note">Also exploring: kinetic typography and self-development reading.</p>
+  </div>
+</section>
+
+<section class="blue" id="contact">
+  <div class="wrap">
+    <h2>Have a project in mind?</h2>
+    <p>Tell me what you need. I reply by email or WhatsApp.</p>
+    <div class="actions">
+      <a class="btn btn-white" href="mailto:zaakirshah57@gmail.com">Contact me</a>
+      <a class="btn btn-line" href="https://wa.me/923375317911">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <span class="logo">ZAKIR</span>
+  <span>&copy; 2026 Zakir.</span>
+  <a href="#top">Back to top</a>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
