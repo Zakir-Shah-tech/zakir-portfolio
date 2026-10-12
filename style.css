@@ -39,7 +39,11 @@ section{padding:clamp(4rem,10vw,8rem) 0}
 .wordmark{margin:0;font-weight:900;font-size:clamp(3.6rem,19vw,17rem);letter-spacing:-.03em;line-height:.9;display:flex;overflow:hidden;padding-bottom:.08em}
 .wordmark span{display:inline-block;animation:rise 1s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i)*.09s + .1s)}
 .hero-line{height:3px;background:var(--blue);margin:1.5rem 0;transform-origin:left;animation:draw 1.2s .7s cubic-bezier(.2,.8,.2,1) both}
-.hero-row{display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:end}
+.hero-row{display:flex;flex-wrap:wrap;gap:2.5rem;justify-content:space-between;align-items:flex-end}
+.hero-text{display:flex;flex-direction:column;gap:1.75rem;flex:1 1 320px}
+.hero-media{flex-shrink:0;animation:fade-up 1.2s .6s cubic-bezier(.2,.8,.2,1) both}
+.hero-image{width:clamp(170px,18vw,230px);aspect-ratio:4/5;object-fit:cover;object-position:center 15%;display:block;border:2px solid var(--line);box-shadow:8px 8px 0 var(--blue);transition:transform .3s ease,box-shadow .3s ease}
+.hero-image:hover{transform:translate(-3px,-3px);box-shadow:11px 11px 0 var(--blue)}
 .headline{font-size:clamp(1.15rem,2.4vw,1.6rem);max-width:30ch;margin:0}
 
 /* 5. Buttons */
@@ -91,6 +95,7 @@ section{padding:clamp(4rem,10vw,8rem) 0}
 /* 10. Motion */
 @keyframes rise{from{transform:translateY(105%)}to{transform:none}}
 @keyframes draw{from{transform:scaleX(0)}to{transform:none}}
+@keyframes fade-up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 /* 11. Small screens */
@@ -100,4 +105,7 @@ section{padding:clamp(4rem,10vw,8rem) 0}
   .menu.open{display:flex}
   .menu a{padding:.9rem 0;border-bottom:1px solid var(--line)}
   .two,.big{grid-template-columns:1fr}
+  .hero-row{gap:2rem}
+  .hero-media{order:-1}
+  .hero-image{width:min(210px,60vw);box-shadow:6px 6px 0 var(--blue)}
 }
