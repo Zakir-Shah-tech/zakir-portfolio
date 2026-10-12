@@ -34,17 +34,18 @@ section{padding:clamp(4rem,10vw,8rem) 0}
 .menu a:hover::after,.menu a:focus-visible::after{transform:scaleX(1)}
 .menu-btn{display:none;background:none;border:1px solid var(--line);color:inherit;font:inherit;padding:.6rem 1rem;min-height:44px;cursor:pointer}
 
-/* 4. Hero: the one memorable element is the ZAKIR wordmark */
-.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:7rem var(--pad) 3rem}
-.wordmark{margin:0;font-weight:900;font-size:clamp(3.6rem,19vw,17rem);letter-spacing:-.03em;line-height:.9;display:flex;overflow:hidden;padding-bottom:.08em}
+/* 4. Hero */
+.hero{min-height:100svh;display:flex;align-items:center;padding:6rem 0 3rem}
+.hero-wrap{display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.hero-left{display:flex;flex-direction:column}
+.wordmark{margin:0;font-weight:900;font-size:clamp(3.4rem,8.5vw,7.5rem);letter-spacing:-.03em;line-height:.95;display:flex;overflow:hidden;padding-bottom:.08em}
 .wordmark span{display:inline-block;animation:rise 1s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i)*.09s + .1s)}
-.hero-line{height:3px;background:var(--blue);margin:1.5rem 0;transform-origin:left;animation:draw 1.2s .7s cubic-bezier(.2,.8,.2,1) both}
-.hero-row{display:flex;flex-wrap:wrap;gap:2.5rem;justify-content:space-between;align-items:flex-end}
-.hero-text{display:flex;flex-direction:column;gap:1.75rem;flex:1 1 320px}
-.hero-media{flex-shrink:0;animation:fade-up 1.2s .6s cubic-bezier(.2,.8,.2,1) both}
-.hero-image{width:clamp(170px,18vw,230px);aspect-ratio:4/5;object-fit:cover;object-position:center 15%;display:block;border:2px solid var(--line);box-shadow:8px 8px 0 var(--blue);transition:transform .3s ease,box-shadow .3s ease}
-.hero-image:hover{transform:translate(-3px,-3px);box-shadow:11px 11px 0 var(--blue)}
-.headline{font-size:clamp(1.15rem,2.4vw,1.6rem);max-width:30ch;margin:0}
+.hero-line{height:3px;background:var(--blue);margin:1.25rem 0 1.5rem;transform-origin:left;animation:draw 1.2s .7s cubic-bezier(.2,.8,.2,1) both}
+.headline{font-size:clamp(1.1rem,1.8vw,1.45rem);max-width:32ch;margin:0 0 2rem}
+.hero-right{display:flex;justify-content:center;align-items:center}
+.hero-frame{position:relative;width:clamp(230px,26vw,330px);max-width:100%;border:2px solid var(--line);box-shadow:10px 10px 0 var(--blue);animation:fade-up 1.2s .5s cubic-bezier(.2,.8,.2,1) both;transition:transform .3s ease,box-shadow .3s ease}
+.hero-frame:hover{transform:translate(-3px,-3px);box-shadow:14px 14px 0 var(--blue)}
+.hero-image{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;display:block}
 
 /* 5. Buttons */
 .actions{display:flex;flex-wrap:wrap;gap:.8rem}
@@ -105,7 +106,8 @@ section{padding:clamp(4rem,10vw,8rem) 0}
   .menu.open{display:flex}
   .menu a{padding:.9rem 0;border-bottom:1px solid var(--line)}
   .two,.big{grid-template-columns:1fr}
-  .hero-row{gap:2rem}
-  .hero-media{order:-1}
-  .hero-image{width:min(210px,60vw);box-shadow:6px 6px 0 var(--blue)}
+  .hero{min-height:auto;padding:6.5rem 0 4rem}
+  .hero-wrap{grid-template-columns:1fr;gap:2.5rem}
+  .hero-right{justify-content:flex-start}
+  .hero-frame{width:min(260px,75vw);box-shadow:7px 7px 0 var(--blue)}
 }
